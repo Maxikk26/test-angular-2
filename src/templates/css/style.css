@@ -1126,7 +1126,7 @@ h5 {
 }
 
 .nav>li>a {
-    color: #a7b1c2;
+    color: #A7B0C1;
     font-weight: 600;
     padding: 14px 20px 14px 25px;
     display: block;
@@ -6202,6 +6202,7 @@ table.table-mail tr td {
 
 .dropdown-item {
     width: auto;
+    color: #A7B0C1;
 }
 
 .dropdown-item.active,

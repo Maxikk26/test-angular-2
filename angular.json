@@ -31,9 +31,11 @@
                             "./src/templates/font-awesome/css/font-awesome.min.css"
                         ],
                         "scripts": [
+                            "./src/templates/js/jquery-2.1.1.js",
                             "./src/templates/js/jquery-3.1.1.min.js",
                             "./src/templates/js/popper.min.js",
-                            "./src/templates/js/bootstrap.js"
+                            "./src/templates/js/bootstrap.js",
+                            "./src/templates/js/inspinia.js"
                         ]
                     },
                     "configurations": {
