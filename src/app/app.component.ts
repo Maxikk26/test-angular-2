@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import *  as JQuery from '../templates/js/jquery-3.1.1.min.js';
+//import *  as JQuery from '../templates/js/jquery-3.1.1.min.js';
 
-function SmoothlyMenu() {
+/*function SmoothlyMenu() {
   if (!JQuery('app-root').hasClass('mini-navbar') || JQuery('app-root').hasClass('body-small')) {
       // Hide menu in order to smoothly turn on when maximize menu
-      JQuery('#side-menu').hide();
+      JQuery('#side-menu').toggle();
       // For smoothly turn on menu
       setTimeout(
           function() {
             JQuery('#side-menu').fadeIn(400);
           }, 200);
   } else if (JQuery('app-root').hasClass('fixed-sidebar')) {
-    JQuery('#side-menu').hide();
+    JQuery('#side-menu').toggle();
       setTimeout(
           function() {
             JQuery('#side-menu').fadeIn(400);
@@ -20,7 +20,7 @@ function SmoothlyMenu() {
       // Remove all inline style from JQuery fadeIn function to reset menu state
       JQuery('#side-menu').removeAttr('style');
   }
-}
+}*/
 
 @Component({
   selector: 'app-root',
@@ -31,13 +31,6 @@ export class AppComponent implements OnInit {
   title = 'test-angular-v2';
 
   ngOnInit(){
-
-    JQuery('.navbar-minimalize').on('click', function(event) {
-      event.preventDefault();
-      JQuery("app-root").toggleClass("mini-navbar");
-      SmoothlyMenu();
-
-    });
 
 
   }
