@@ -68,25 +68,25 @@ $(document).ready(function() {
         $("body").toggleClass("mini-navbar");
         SmoothlyMenu();
     });
-
-    // Run menu of canvas
-    $('body.canvas-menu .sidebar-collapse').slimScroll({
-        height: '100%',
-        railOpacity: 0.9
-    });
+    /*
+        // Run menu of canvas
+        $('body.canvas-menu .sidebar-collapse').slimScroll({
+            height: '100%',
+            railOpacity: 0.9
+        });*/
 
     // Open close right sidebar
     $('.right-sidebar-toggle').on('click', function(e) {
         e.preventDefault();
         $('#right-sidebar').toggleClass('sidebar-open');
     });
-
-    // Initialize slimscroll for right sidebar
-    $('.sidebar-container').slimScroll({
-        height: '100%',
-        railOpacity: 0.4,
-        wheelStep: 10
-    });
+    /*
+        // Initialize slimscroll for right sidebar
+        $('.sidebar-container').slimScroll({
+            height: '100%',
+            railOpacity: 0.4,
+            wheelStep: 10
+        });*/
 
     // Open close small chat
     $('.open-small-chat').on('click', function(e) {
@@ -94,12 +94,12 @@ $(document).ready(function() {
         $(this).children().toggleClass('fa-comments').toggleClass('fa-times');
         $('.small-chat-box').toggleClass('active');
     });
-
-    // Initialize slimscroll for small chat
-    $('.small-chat-box .content').slimScroll({
-        height: '234px',
-        railOpacity: 0.4
-    });
+    /*
+        // Initialize slimscroll for small chat
+        $('.small-chat-box .content').slimScroll({
+            height: '234px',
+            railOpacity: 0.4
+        });*/
 
     // Small todo handler
     $('.check-link').on('click', function() {
@@ -145,13 +145,13 @@ $(document).ready(function() {
         .popover();
 
     // Add slimscroll to element
-    $('.full-height-scroll').slimscroll({
+    /*$('.full-height-scroll').slimscroll({
         height: '100%'
-    })
+    })*/
 });
 
 
-
+/*
 // Fixed Sidebar
 $(window).bind("load", function() {
     if ($("body").hasClass('fixed-sidebar')) {
@@ -160,7 +160,7 @@ $(window).bind("load", function() {
             railOpacity: 0.9
         });
     }
-});
+});*/
 
 function fix_height() {
     var heightWithoutNavbar = $("body > #wrapper").height() - 62;
@@ -220,13 +220,13 @@ $(document).ready(function() {
 
         var body = $('body');
 
-        if (fixedsidebar == 'on') {
+        /*if (fixedsidebar == 'on') {
             body.addClass('fixed-sidebar');
             $('.sidebar-collapse').slimScroll({
                 height: '100%',
                 railOpacity: 0.9
             });
-        }
+        }*/
 
         if (collapse == 'on') {
             if (body.hasClass('fixed-sidebar')) {
