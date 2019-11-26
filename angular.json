@@ -36,8 +36,7 @@
                             "./src/templates/js/popper.min.js",
                             "./src/templates/js/bootstrap.min.js",
                             "./src/templates/js/plugins/metisMenu/jquery.metisMenu.js",
-                            "./src/templates/js/plugins/slimscroll/jquery.slimscroll.js",
-                            "./src/templates/js/inspinia.js"
+                            "./src/templates/js/plugins/slimscroll/jquery.slimscroll.js"
                         ]
                     },
                     "configurations": {

@@ -1,6 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarToggleService } from './../../services/sidebar-toggle.service';
+declare var $;
 
-declare var JQuery;
+function SmoothlyMenu() {
+  if (!$('body').hasClass('mini-navbar') || $('body').hasClass('body-small')) {
+      // Hide menu in order to smoothly turn on when maximize menu
+      $('#side-menu').hide();
+      // For smoothly turn on menu
+      setTimeout(
+          function() {
+              $('#side-menu').fadeIn(400);
+          }, 200);
+  } 
+}
+
 
 @Component({
   selector: 'app-header',
@@ -9,9 +22,15 @@ declare var JQuery;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _sidebar:SidebarToggleService) { }
 
   ngOnInit() {
+  }
+
+  toggleSidebar():void{
+   
+      $("body").toggleClass("mini-navbar");
+      SmoothlyMenu();
   }
 
 }
