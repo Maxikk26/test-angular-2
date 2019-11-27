@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TableComponent } from './components/table/table.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TableComponent } from './components/table/table.component';
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
-    TableComponent
+    TableComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
