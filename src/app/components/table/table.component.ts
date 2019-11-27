@@ -7,6 +7,7 @@ import { CsvService } from './../../services/csv.service';
 //import 'jspdf-autotable';
 //import * as jsPDF from 'jspdf';
 import { PdfService } from './../../services/pdf.service';
+import { ShowService } from './../../services/show.service';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -23,7 +24,8 @@ export class TableComponent implements OnInit {
             private _contentService:ContentService,
             private _excelService:ExcelService,
             private _csvService:CsvService,
-            private _pdfService:PdfService,) {
+            private _pdfService:PdfService,
+            public _showService:ShowService) {
     this.option = 10; 
     this.filter = '';
     this.contents = this._contentService.getContent();
@@ -31,6 +33,7 @@ export class TableComponent implements OnInit {
       itemsPerPage:this.option,
       currentPage:1
     }
+    this._showService.toggle();
 
   }
 

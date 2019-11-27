@@ -16,6 +16,13 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TableComponent } from './components/table/table.component';
 import { FilterPipe } from './pipes/filter.pipe';
 
+//Services
+import { ContentService } from './services/content.service';
+import { CsvService } from './services/csv.service';
+import { PdfService } from './services/pdf.service';
+import { ExcelService } from './services/excel.service';
+import { ShowService } from './services/show.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +34,19 @@ import { FilterPipe } from './pipes/filter.pipe';
     FilterPipe
   ],
   imports: [
-    BrowserModule,
+  
+ BrowserModule,
     APP_ROUTING,
     FormsModule,
     NgxPaginationModule
   ],
-  providers: [],
+  providers: [
+    ContentService,
+    CsvService,
+    PdfService,
+    ExcelService,
+    ShowService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
