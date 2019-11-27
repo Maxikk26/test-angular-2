@@ -6,12 +6,13 @@ import { Injectable } from '@angular/core';
 export class ShowService {
 
   visible: boolean;
+  showLogin:boolean;
 
-  constructor() { this.visible = false; }
+  constructor() { this.visible = false; this.showLogin=true; }
 
-  hide() { this.visible = false; }
+  hide() { this.visible = false;this.showLogin =true; }
 
-  show() { this.visible = true; }
+  show() { this.visible = true; this.showLogin =false; }
 
-  toggle() { this.visible = !this.visible; }
+  toggle() { this.visible = !this.visible;  this.showLogin = !this.showLogin;}
 }

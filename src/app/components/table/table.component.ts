@@ -33,7 +33,7 @@ export class TableComponent implements OnInit {
       itemsPerPage:this.option,
       currentPage:1
     }
-    this._showService.toggle();
+    this._showService.show();
 
   }
 

@@ -7,8 +7,10 @@ import { ShowService } from './../../services/show.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  show:boolean;
 
   constructor(public _showService:ShowService) {
+    this._showService.hide();
     
    }
 

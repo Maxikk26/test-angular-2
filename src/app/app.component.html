@@ -1,8 +1,11 @@
-<div>
-    <app-sidebar class="fixed-sidebar" *ngIf="this._showService.visible"></app-sidebar>
-    <div class="" id="page-wrapper">
-        <app-header *ngIf="this._showService.visible"></app-header>
+<div *ngIf="this._showService.visible">
+    <app-sidebar class="fixed-sidebar">
+    </app-sidebar>
+    <div id="page-wrapper" *ngIf="this._showService.visible">
+        <app-header></app-header>
         <router-outlet class="animated fadeInDown"></router-outlet>
-        <app-footer *ngIf="this._showService.visible"></app-footer>
+        <app-footer></app-footer>
     </div>
 </div>
+
+<router-outlet class="animated fadeInDown" *ngIf="this._showService.showLogin"></router-outlet>
