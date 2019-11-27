@@ -22,6 +22,7 @@ import { CsvService } from './services/csv.service';
 import { PdfService } from './services/pdf.service';
 import { ExcelService } from './services/excel.service';
 import { ShowService } from './services/show.service';
+import { PrintComponent } from './components/print/print.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ShowService } from './services/show.service';
     HeaderComponent,
     SidebarComponent,
     TableComponent,
-    FilterPipe
+    FilterPipe,
+    PrintComponent
   ],
   imports: [
   

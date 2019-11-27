@@ -1,0 +1,18 @@
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <th scope="col">Rendering engine</th>
+        <th scope="col">Browser</th>
+        <th scope="col">Platform(s)</th>
+        <th scope="col">Engine version</th>
+        <th scope="col">CSS grade</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let content of contents ">
+            <td>{{content.rendering}}</td>
+            <td>{{content.browser}}</td>
+            <td>{{content.platform}}</td>
+            <td>{{content.engine}}</td>
+            <td>{{content.css}}</td>
+        </tr>
+    </tbody>
+</table>
