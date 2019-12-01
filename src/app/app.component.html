@@ -1,6 +1,8 @@
 <div *ngIf="this._showService.visible">
-    <app-sidebar class="fixed-sidebar">
-    </app-sidebar>
+    <div class="navbar-default navbar-static-side" role="navigation">
+    <app-sidebar></app-sidebar>
+        
+    </div>
     <div id="page-wrapper" *ngIf="this._showService.visible">
         <app-header></app-header>
         <router-outlet class="animated fadeInDown"></router-outlet>
